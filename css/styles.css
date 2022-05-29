@@ -142,12 +142,8 @@ body {
 }
 
 .hero {
-    width: 1600px;
-    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    margin-left: 0 auto;
-    margin-right: 0 auto;
     text-align: center;
     background-color: var(--second-background-color);
 }
@@ -191,14 +187,14 @@ body {
     overflow: hidden;
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .benefits-list {
     display: flex;
     flex-wrap: nowrap;
-}
-
-.benefits-item {
-    padding-top: 94px;
-    padding-bottom: 47px;
 }
 
 .benefits-item:not(:last-child) {
@@ -214,13 +210,13 @@ body {
 }
 
 .benefits-text {
+    max-width: 270px;
     line-height: 1.71;
     color: var(--main-text-color);
 }
 
 .about {
-    padding-top: 47px;
-    padding-bottom: 94px;
+    padding-top: 0;
 }
 
 .about-title {
@@ -240,8 +236,6 @@ body {
 }
 
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
     background-color: #F5F4FA;
 }
 
@@ -250,9 +244,13 @@ body {
     justify-content: space-between;
 }
 
+.team-item {
+    background-color: var(--main-background-color);
+    border-radius: 0px 0px 4px 4px;
+}
+
 .team-item:not(:last-child) {
     margin-right: var(--typical-mrg);
-    margin-bottom: var(--typical-mrg);
 }
 
 .team-title {
@@ -273,6 +271,7 @@ body {
 }
 
 .team-text {
+    margin-bottom: var(--typical-mrg);
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -286,6 +285,7 @@ body {
 }
 
 .footer-logo {
+    display: block;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -336,15 +336,10 @@ body {
 
 /*-------------PORTFOLIO-----------*/
 
-.gallery {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .gallery-list {
     display: flex;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 
 .gallery-item:not(:last-child) {
@@ -376,19 +371,22 @@ body {
 
     margin-right: calc( -1 * var(--typical-mrg));
     margin-bottom: calc(-1 * var(--typical-mrg));
-
-    border-bottom: 1px solid #EEEEEE;
 }
 
 .examples-content {
     padding: 20px 24px;
-}
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+ }
 
 .examples-title {
     flex-basis: calc(100% / 3 - var(--typical-mrg));
     margin-right: var(--typical-mrg);
     margin-bottom: var(--typical-mrg);
+}
 
+.examples-top-text {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
